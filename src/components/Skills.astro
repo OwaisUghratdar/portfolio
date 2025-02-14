@@ -1,0 +1,43 @@
+---
+const skills = [
+  { name: "HTML", img: "../assets/html.png" },
+  { name: "CSS", img: "/assets/css.png" },
+  { name: "JavaScript", img: "/assets/javascript.png" },
+  { name: "React", img: "/assets/react.png" },
+  { name: "TypeScript", img: "/assets/Typescript.png" },
+  { name: "Angular", img: "/assets/angular_icon.png" },
+  { name: "Node.js", img: "/assets/node.png" },
+  { name: "Tailwind", img: "/assets/tailwind.png" },
+  { name: "Next.js", img: "/assets/nextjs_icon.png" },
+  { name: "MongoDB", img: "/assets/mongo.png" },
+  { name: "Docker", img: "/assets/docker_icon.png" },
+  { name: "Redux", img: "/assets/redux.svg" },
+  { name: "Vite", img: "/assets/vite_icon.svg" },
+  { name: "Java", img: "/assets/Java.png" },
+  { name: "GitHub", img: "/assets/github.png" },
+  { name: "Firebase", img: "/assets/firebase.png" },
+];
+---
+
+<section class="w-full mt-12 bg-transparent text-gray-300">
+  <div class="max-w-[1000px] mx-auto px-6 flex flex-col justify-center w-full">
+    <div>
+        <h2 class="text-2xl font-semibold mb-3 text-center bg-gradient-to-r from-[#64B6FF] to-[#A78BFA] text-transparent bg-clip-text">
+            Technologies
+        </h2>
+      <p class="py-2">
+        These are the technologies I'm mostly working with right now. Over my years of experience, 
+        I've gained knowledge in many different languages, frameworks, and tools.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center py-4">
+      {skills.map((skill) => (
+        <div class="shadow-md shadow-[#040c16] hover:scale-110 duration-500 p-4 rounded-lg">
+          <img class="w-16 mx-auto" src={skill.img} alt={`${skill.name} icon`} />
+          <p class="mt-4">{skill.name}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
