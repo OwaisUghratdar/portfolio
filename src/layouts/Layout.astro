@@ -8,14 +8,14 @@ import "../styles/global.css";
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" href="/portfolio/favicon.ico" />
 </head>
 <body class="text-white min-h-screen flex justify-center">
   <div class="mt-8 w-full max-w-3xl px-6"> 
     <nav class="py-2 flex justify-center space-x-6">
         <a href={`${import.meta.env.BASE_URL}`} class="font-bold hover:underline">Overview</a>
-		<a href={`${import.meta.env.BASE_URL}experience`} class="font-bold hover:underline">Experience</a>
-		<a href={`${import.meta.env.BASE_URL}projects`} class="font-bold hover:underline">Projects</a>
+		<a href={`${import.meta.env.BASE_URL}/experience`} class="font-bold hover:underline">Experience</a>
+		<a href={`${import.meta.env.BASE_URL}/projects`} class="font-bold hover:underline">Projects</a>
     </nav>
     <main class="mt-6">
       <slot />
